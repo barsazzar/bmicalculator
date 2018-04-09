@@ -12,10 +12,13 @@ except EOFError:
 
 #Step 1. A loop to get user's gender, only be continued when enter 1 or 2
 while True: 
+    try:
     string_sex = input('''1. Please enter your sex.
    If you are male, please enter 1.
    If you are female, please enter 2.
    Enter: ''')
+    except EOFError:
+      print ('Error my ass!')  
     #sex = int(string_sex)
 
     if string_sex == '2' or string_sex == '1':
@@ -29,10 +32,13 @@ while True:
     
 #Step 2. Get user's weight, weight must be float
 while True:        
+    try:
     string_weight = input('''2. Please enter your weight in kilograms to the first decimal place,
    Please note your weight must between 10.00kg - 200.00kg,
    eg. 80.5 is valid.
    Enter: ''')
+    except EOFError:
+        print ('Error my ass!')
 
 #Use try and exception to get if user has entered a right weight
     try:
@@ -48,10 +54,13 @@ while True:
 
 #Step 3. Get user's height, height must be float
 while True:
+    try:
     string_height = input('''3. Please enter your height in meters to the second decimal place,
    Please note your height must between 1.2m - 2.5m,
    eg. 1.22 is valid.
    Enter: ''')
+    except EOFError:
+    print ('Error my ass!')
     
 #Use try and exception to get if user has entered a right weight
     try:
