@@ -4,9 +4,11 @@ print ('''Welcome come to Easy BMI calculater
 This program is programmed by Ding. Ver.0.1.2''')
 #print ("This program is programmed by Ding. Ver.0.1" '\n','\n')
 
-#get user name
-name = input('Please enter your name: ') 
-print ('\n''Hello',name,', please follow the simple 3 steps to calculate your BMI.' '\n')
+try:
+    name = input('Please enter your name: ') #get user name
+    print ('\n''Hello',name,', please follow the simple 3 steps to calculate your BMI.' '\n')
+except EOFError:
+    print ('Error my ass!')
 
 #Step 1. A loop to get user's gender, only be continued when enter 1 or 2
 while True: 
@@ -92,13 +94,4 @@ elif bmi >= 35:
     print('Too fat, you need to find a way to survive!')
 else:
     print("Don't be silly, no pain no gain!")
-
-
-
-
-
     
-
-
-
-
