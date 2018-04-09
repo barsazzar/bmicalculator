@@ -4,7 +4,8 @@ print ('''Welcome come to Easy BMI calculater
 This program is programmed by Ding. Ver.0.1.2''')
 #print ("This program is programmed by Ding. Ver.0.1" '\n','\n')
 
-name = input('Please enter your name: ') #get user name
+#get user name
+name = input('Please enter your name: ') 
 print ('\n''Hello',name,', please follow the simple 3 steps to calculate your BMI.' '\n')
 
 #Step 1. A loop to get user's gender, only be continued when enter 1 or 2
