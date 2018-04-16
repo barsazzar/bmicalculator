@@ -1,3 +1,7 @@
+
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import math
 
 print ('''Welcome come to Easy BMI calculater
